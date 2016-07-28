@@ -1,6 +1,6 @@
 var myPort = angular.module("myPort");
 
-myPort.controller("portController",["$scope", function(){
+myPort.controller("portController", ["$scope", function($scope){
   $scope.projects = [
     {
       title:"Project 1",

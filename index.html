@@ -16,16 +16,17 @@
 <!-- Navigation bar start -->
     <nav>
       <ul>
-        <li>&#127968;<a href="#/home">Home</a></li>
-        <li>&#x263a;<a href="#/about">About Me</a></li>
-        <li>&#x2709;<a href="#/contact">Contact Me</a></li>
-        <li>&#x1f4c2;<a href="#/portfolio">My Portfolio</a></li>
+        <li>&#127968; <a href="#/home">Home</a></li>
+        <li>&#x263a; <a href="#/about">About Me</a></li>
+        <li>&#x2709; <a href="#/contact">Contact Me</a></li>
+        <li>&#x1f4c2; <a href="#/portfolio">My Portfolio</a></li>
+        <li class="hidden">&#x26a0; <a href="#/404">404</a></li>
         <!-- <li class="blog"><a href="#">My Blog</a></li> -->
       </ul>
     </nav>
 <!-- Navigation bar end -->
   </header>
-    <div ng-controller="portController">
+    <div>
       <ng-view></ng-view>
     </div>
   </div>
@@ -33,7 +34,7 @@
   <script src="js/angular-route.js" charset="utf-8"></script>
   <script src="js/jquery-3.0.0.min.js" charset="utf-8"></script>
   <script src="js/app.js"></script>
-  <script src="js/feedcontroller.js"></script>
+  <script src="js/portcontroller.js"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
 </body>
 </html>
