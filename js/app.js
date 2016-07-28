@@ -8,6 +8,10 @@ myPort.config(function($routeProvider){
       controller: "portController",
       templateUrl: "views/home.html"
     })
+    .when("/home", {
+      controller: "portController",
+      templateUrl: "views/home.html"
+    })
     .when("/about", {
       controller: "portController",
       templateUrl: "views/about.html"
