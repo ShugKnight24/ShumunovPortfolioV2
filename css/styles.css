@@ -35,3 +35,13 @@ nav ul li a {
 #pitch{
   width:100%;
 }
+
+.social {
+  list-style-type: none;
+  display: inline;
+}
+
+.contact{
+  width: 150px;
+  height: 150px;
+}

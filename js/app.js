@@ -24,6 +24,10 @@ myPort.config(function($routeProvider){
       controller: "portController",
       templateUrl: "views/portfolio.html"
     })
+    .when("/resume", {
+      controller: "portController",
+      templateUrl: "views/resume.html"
+    })
     .when("/404", {
       controller: "portController",
       templateUrl: "views/404.html"
