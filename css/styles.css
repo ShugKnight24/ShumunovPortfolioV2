@@ -1,11 +1,11 @@
-#body{
+body {
   width:100%;
   height: auto;
   padding: 0;
 	margin: 0;
 }
 
-ul {
+/*ul {
 	padding: 0;
 	margin: 0;
 	border: 1px solid #FFFFFF;
@@ -50,4 +50,4 @@ ul li a:hover {
 ul li a:active {
 	background-color: blue;
 	color: white;
-}
+}*/
