@@ -1,47 +1,84 @@
 body {
-  background-color: #090C9B;
-  color: #d00000;
+  background-color: #B3B6B7;
+  color: #090C9B;
+}
+
+/*********** Header/Nav Styling ***********/
+.head {
+  text-align: center;
 }
 
 nav ul {
   list-style-type: none;
+  width: 1000px;
+  height: 50px;
+  background-color: #090C9B;
+  text-align: center;
 }
 
 nav ul li {
   display: inline;
+  width: 200px;
+  line-height: 50px;
+  padding: 10px;
 }
 
-nav ul li a {
-  color: yellow;
+nav ul li span {
+  color: #F5E663;
   font-size: 24px;
 }
 
-#book{
+nav ul li a {
+  color: orange;
+  font-size: 24px;
+}
+
+#book {
   color:white;
   font-weight: bold;
 }
 
-#laptop{
-  color:orange;
+#laptop {
+  color:#d00000;
   font-weight: bold;
 }
 
-#glasses{
+#glasses {
   color:#F5E663;
   font-weight: bold;
 
 }
 
-#pitch{
+#pitch {
   width:100%;
 }
+
+.hidden {
+  display: none;
+}
+
+/* Target Active Nav item*/
+.active{
+  background-color: green;
+}
+
+/*********** Footer Styling ***********/
+
+footer {
+  text-align: right;
+}
+
+/*********** Contact View Styling ***********/
 
 .social {
   list-style-type: none;
   display: inline;
 }
 
-.contact{
-  width: 150px;
-  height: 150px;
+/*********** Contact Images Styling ***********/
+.contact {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #000000;
 }

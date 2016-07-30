@@ -10,29 +10,35 @@
   <title>Shumunov Portfolio</title>
 </head>
 <body ng-app="myPort">
+<!-- Header start -->
   <header class="container">
-      <h1>Shugmi Shumunov's Portfolio Site</h1>
-      <h3 id="pitch"><span id="book"> &#x1f4d6;</span> Life Long Learner / <span id="laptop">&#x1f4bb;</span> Aspiring Web Developer / <span id="glasses">&#x1f453;</span> Excited for Virtual Reality</h3>
+    <div class="row head">
+        <h1>Shugmi Shumunov's Portfolio Site</h1>
+      <div class="twelve columns">
+        <h5 id="pitch"><span id="book"> &#x1f4d6;</span> Life Long Learner / <span id="laptop">&#x1f4bb;</span> Aspiring Web Developer / <span id="glasses">&#x1f453;</span> Excited for Virtual Reality</h5>
+      </div>
+    </div>
 <!-- Navigation bar start -->
-    <nav>
+    <nav ng-controller="navController">
       <ul>
-        <li><span id="house">&#127968;</span> <a href="#/home">Home</a></li>
-        <li><span id="smiley">&#x263a;</span> <a href="#/about">About Me</a></li>
-        <li><span id="email">&#x2709;</span> <a href="#/contact">Contact Me</a></li>
-        <li><span id="portfolio">&#x1f4c2;</span> <a href="#/portfolio">My Portfolio</a></li>
-        <li><span id="resume">&#x1f4f0;</span> <a href="#/resume">My Resume</a></li>
+        <li ng-class="{active: isActive('/home')}"><span id="house">&#127968;</span> <a href="#/home">Home</a></li>
+        <li ng-class="{active: isActive('/about')}"><span id="smiley">&#x263a;</span> <a href="#/about">About Me</a></li>
+        <li ng-class="{active: isActive('/contact')}"><span id="email">&#x2709;</span> <a href="#/contact">Contact Me</a></li>
+        <li ng-class="{active: isActive('/portfolio')}"><span id="portfolio">&#x1f4c2;</span> <a href="#/portfolio">My Portfolio</a></li>
+        <li ng-class="{active: isActive('/resume')}"><span id="resume">&#x1f4f0;</span> <a href="#/resume">My Resume</a></li>
         <li class="hidden"><span id="warning">&#x26a0;<span> <a href="#/404">404</a></li>
         <!-- <li class="blog"><a href="#">My Blog</a></li> -->
       </ul>
     </nav>
 <!-- Navigation bar end -->
   </header>
+  <!-- Header end -->
     <div ng-controller="portController">
       <ng-view></ng-view>
     </div>
   </div>
   <footer class="container">
-    Copyright &copy; 2016 Shugmi Shumunov 
+    Copyright &copy; 2016 Shugmi Shumunov
     <!-- <span class="pagejump"><a href="#" class="topOfPage">Top of the Page</a></span> -->
   </footer>
   <script src="js/angular.js" charset="utf-8"></script>
@@ -40,6 +46,7 @@
   <script src="js/jquery-3.0.0.min.js" charset="utf-8"></script>
   <script src="js/app.js"></script>
   <script src="js/portcontroller.js"></script>
+  <script src="js/navcontroller.js"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
 </body>
 </html>

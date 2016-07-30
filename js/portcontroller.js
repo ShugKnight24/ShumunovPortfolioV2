@@ -1,3 +1,5 @@
+"use strict";
+
 var myPort = angular.module("myPort");
 
 myPort.controller("portController", ["$scope", function($scope){
